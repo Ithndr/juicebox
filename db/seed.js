@@ -11,6 +11,5 @@ async function testDB() {
     } finally {
       client.end();
     }
-  }
-
+}
 testDB();
