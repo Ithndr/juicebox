@@ -198,6 +198,19 @@ async function testDB() {
   }
 }
 
+// async function getAllTags() {
+//   try {
+//     const {rows} = await client.query(
+//     SELECT * 
+//     FROM tags;
+//     );
+
+//     return rows;
+//   } catch (error) {
+//    throw error; 
+//   }
+//   }
+
 
 rebuildDB()
   .then(testDB)
