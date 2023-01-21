@@ -1,5 +1,4 @@
 require('dotenv').config();
-const DATABASE_URL = 'postgresql://Ithndr:v2_3yECh_PbKJLvZuCdCGKPWRnARK4Rv@db.bit.io:5432/Ithndr/MCECJuiceBox';
 const PORT = process.env.PORT || 3000; 
 const express = require("express");
 const server = express();
