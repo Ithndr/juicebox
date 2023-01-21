@@ -1,7 +1,7 @@
 const express = require('express');
 const apiRouter = express.Router();
 //define routers
-const postsRouter =  require('./post');
+const postsRouter =  require('./posts');
 const usersRouter = require('./users');
 const tagsRouter = require('./tags');
 
@@ -51,7 +51,7 @@ apiRouter.use((req, res, next) => {
 //connect routers
 apiRouter.use('/tags', tagsRouter);
 apiRouter.use('/users', usersRouter);
-apiRouter.use('/post', postsRouter);
+apiRouter.use('/posts', postsRouter);
 
 apiRouter.use((error, req, res, next) => {
     res.send({
@@ -61,3 +61,5 @@ apiRouter.use((error, req, res, next) => {
   });
   
   module.exports = apiRouter;
+
+
